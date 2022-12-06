@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travel Information Form</h1>
+        <p>Please provide us with the contact information below and we will arrange to reserve your ticket.</p>
+        <hr>
+        <form action="response.html">
+            <div>
+                <!-- NAME -->
+                <b>Name</b>
+                <label>
+                    <input type="text" name="firstname" id="first name" placeholder="First name">
+                </label>
+                <label>
+                    <input type="text" name="middlename" id="middlename" placeholder="Middle name">
+                </label>
+                <label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last name">
+                </label>
+                <br>
+                <!-- ORGANISTATION NAME -->
+                <B>Organistation's Name</B>
+                <label>
+                    <input type="text" name="organistion" id="organisation">
+                </label>
+                <br>
+                <!-- E-mail -->
+                <b>E-mail</b>
+                <label>
+                    <input type="email" name="Email" id="Email">
+                </label>
+                <br>
+                <!-- Phone Number -->
+                <b>Phone Number</b>
+                <label>
+                    <input type="tel" name="code" id="code" placeholder="Eg: +91">
+                    -
+                    <input type="tel" name="phone number" id="phone number" placeholder="Eg: 7654029653">
+                </label>
+            </div>
+            <hr>
+            <h2>Travel Details</h2>
+            <hr>
+            <div>
+                <!-- Departure Country -->
+                <b>Departure Country</b><br>
+                <label for="departure"></label>
+                <input type="text" name="departure" id="departure" placeholder="Eg: India">
+                <br>
+                <!-- Destination Country -->
+                <b>Destination Country</b><br>
+                <label for="destination"></label>
+                <input type="text" name="destination" id="destination" placeholder="Eg: America">
+                <br>
+                <!-- Departure Date-time -->
+                <b>Departure Date-Time</b>
+                <label for="departureDT"></label>
+                <input type="datetime-local" name="departureDT" id="departureDT">
+                <br>
+                <!-- Return Date-Time -->
+                <b>Return Date-Time</b>
+                <label for="Return"></label>
+                <input type="datetime-local" name="return" id="return">
+                <br>
+                <!-- Class of Service -->
+                <label for="Class"><b>Class of Service</b></label>
+                <select name="Class" id="Class">
+                    <option value="Choose a Class">--Please Select a Class--</option>
+                    <option value="Economy Class">Economy Class</option>
+                    <option value="Buissness Class">Buissness Class</option>
+                    <option value="First Class">First Class</option>
+                </select>
+                <br>
+                <!-- Services -->
+                <u><b>Please Select the Services</b></u>
+                <br>
+                <label>
+                    <input type="checkbox" name="airlinetickets" id="airlinetickets"> <b>Airline Tickets</b>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="Rcar" id="Rcar"> <b>Rental Car</b>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="HotelA" id="HotelA"> <b>Hotel Accomodations</b>
+                </label>
+                <br>
+            </div>
+            <hr>
+            <h2>Traveler's Details</h2>
+            <hr>
+            <div>
+                <!-- Prefered Hotel Brand -->
+                <label for="hotelbrand"><b>Prefered Hotel Brand</b></label>
+                <input type="text" name="hotelbrand" id="hotelbrand">
+                <br>
+                <!-- Prefered Airline -->
+                <label for="Preferedairline"><b>Prefered Airline</b></label>
+                <input type="text" name="Preferedairline" id="Preferedairline">
+                <br>
+                <!-- Aditional Details -->
+                <textarea name="Details" id="Details" cols="30" rows="10" placeholder="Additional Deatils"></textarea>
+                <!-- Submit -->
+                <label>
+                    <input type="submit" value="Submit Form">
+                </label>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
